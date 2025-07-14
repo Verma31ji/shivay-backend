@@ -8,7 +8,8 @@ import authRouter from './Route/authRoutes.js';
 import adminRouter from './Route/adminRoutes.js';
 import postRouter from './controller/PostController.js';
 import UserRouter from './Route/UserRoutes.js';
-import router from './Route/ContactQueryRoutes.js';
+import contactQuery from './Route/contactQueryRoute.js';
+
 
 
 
@@ -30,7 +31,7 @@ app.use('/api/auth', authRouter);
 app.use('/api/admin', adminRouter);
 app.use('/api', postRouter);
 app.use('/api/user', UserRouter);
-app.use('/api/query', router);
+app.use('/api/query', contactQuery);
 
 
 

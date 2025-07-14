@@ -1,5 +1,6 @@
 import express from 'express';
-import contactQuery from '../Models/contactQuery.js';
+import contactQueryModel from '../Models/contactQueryModel.js';
+
 
 
 
@@ -13,7 +14,7 @@ router.post('/contact', async (req, res) => {
     }
 
     try {
-        await contactQuery.create({ name, email, phone, message, category, price });
+        await contactQueryModel.create({ name, email, phone, message, category, price });
         res.status(200).json({ success: true, msg: "Query saved" });
     } catch (err) {
         res.status(500).json({ success: false, msg: err.message });
