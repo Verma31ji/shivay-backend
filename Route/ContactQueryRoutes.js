@@ -2,6 +2,7 @@ import express from 'express';
 import contactQuery from '../model/contactQuery.js';
 
 
+
 const router = express.Router();
 
 router.post('/contact', async (req, res) => {
