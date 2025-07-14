@@ -1,7 +1,7 @@
 // controllers/userController.js
 import jwt from 'jsonwebtoken'
 import bcrypt from 'bcrypt'
-import UserModel from '../model/UserModel.js'
+import UserModel from '../Models/UserModel.js'
 import transporter from '../config/nodeMailer.js'
 
 

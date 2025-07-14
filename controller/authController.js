@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import transporter from '../config/nodeMailer.js';
-import AdminModel from '../model/adminModel.js';
+import AdminModel from '../Models/adminModel.js';
 
 // Register
 export const register = async (req, res) => {

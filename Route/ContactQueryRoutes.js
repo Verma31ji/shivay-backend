@@ -1,5 +1,5 @@
 import express from 'express';
-import contactQuery from '../model/contactQuery.js';
+import contactQuery from '../Models/contactQuery.js';
 
 
 
@@ -23,7 +23,7 @@ router.post('/contact', async (req, res) => {
 
 router.get("/all", async (req, res) => {
     try {
-        const queries = await contactQuery.find().sort({ createdAt: -1 }); // use correct lowercase model name
+        const queries = await contactQuery.find().sort({ createdAt: -1 });
         res.status(200).json({ success: true, queries });
     } catch (err) {
         res.status(500).json({ success: false, msg: err.message });

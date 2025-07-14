@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import AdminModel from '../model/adminModel.js';
+import AdminModel from '../Models/adminModel.js';
 
 const adminAuth = async (req, res, next) => {
     const token = req.cookies.token;
