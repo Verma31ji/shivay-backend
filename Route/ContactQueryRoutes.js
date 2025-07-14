@@ -1,5 +1,6 @@
 import express from 'express';
-import contactQuery from '../model/contactQuery.js'
+import contactQuery from '../model/contactQuery.js';
+
 
 const router = express.Router();
 

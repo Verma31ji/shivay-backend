@@ -8,7 +8,9 @@ import authRouter from './Route/authRoutes.js';
 import adminRouter from './Route/adminRoutes.js';
 import postRouter from './controller/PostController.js';
 import UserRouter from './Route/UserRoutes.js';
-import ContactQueryRoutes from './Route/ContactQueryRoutes.js'
+import router from './Route/ContactQueryRoutes.js';
+
+
 
 const app = express();
 const port = process.env.PORT || 5500;
@@ -28,7 +30,7 @@ app.use('/api/auth', authRouter);
 app.use('/api/admin', adminRouter);
 app.use('/api', postRouter);
 app.use('/api/user', UserRouter);
-app.use('/api/query', ContactQueryRoutes);
+app.use('/api/query', router);
 
 
 
