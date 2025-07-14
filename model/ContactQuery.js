@@ -10,4 +10,4 @@ const contactQuerySchema = new mongoose.Schema({
 }, { timestamps: true });
 
 
-export default mongoose.model("ContactQuery", contactQuerySchema);
+export default mongoose.model("contactQuery", contactQuerySchema);
